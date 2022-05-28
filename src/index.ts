@@ -7,8 +7,8 @@
 let arreglo1: number[] = new Array(6);
 let arreglo2: number[] = new Array(6);
 
-let numero1: number, indice1: number;
-for (indice1 = 0; indice1 < 6; indice1++) {
+let numero1: number, indice1: number;//que pasa si en vez de crear 3 indices utilizas siempre el mismo?
+for (indice1 = 0; indice1 < 6; indice1++) {// lo ideal seria usar v1.length ya que si necesitas cambiar la cantidad de elementos solo cambias en la primer asignacion y no en el resto del codigo.
   numero1 = Number(
     prompt(
       "Arreglo1: Indique el numero que desea incorporar en la posicion " +
@@ -41,7 +41,7 @@ for (indice2 = 0; indice2 < 6; indice2++) {
   );
 }
 
-console.log(
+console.log(//lo ideal es realizar la suma utilizando algun ciclo
   "el numero sumado es : ",
   arreglo1[0] + arreglo2[0],
   arreglo1[1] + arreglo2[1],
